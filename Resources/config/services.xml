@@ -13,7 +13,7 @@
     <services>
         <service id="twig2" class="%twig2.class%" public="false">
             <argument type="service" id="twig2.loader" />
-            <argument>%twig.options%</argument>
+            
         </service>
 
         <service id="twig2.loader" class="%twig2.loader.class%" public="false">
@@ -24,7 +24,7 @@
         <service id="templating.engine.twig2" class="%templating.engine.twig2.class%" public="false">
             <argument type="service" id="twig2" />
             <argument type="service" id="templating.name_parser" />
-            <argument type="service" id="templating.globals" />
+            
         </service>
     </services>
 
